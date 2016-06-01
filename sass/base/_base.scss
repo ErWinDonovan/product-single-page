@@ -1,0 +1,47 @@
+div, input, textarea {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h1, h2, p {
+	font-family: $lato;
+	line-height: 1.6;
+	margin-bottom: 15px;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 24px;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+p {
+	font-weight: 400;
+	font-size: 14px;
+}
+
+ul {
+	font-family: $lato;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+a {
+	font-family: $lato;
+	font-weight: 700;
+	text-decoration: none;
+	transition: color .2s;
+	color: #000;
+		&:hover {
+			color: $hover;
+		}
+}

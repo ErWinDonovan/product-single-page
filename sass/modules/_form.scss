@@ -1,0 +1,27 @@
+select, input {
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 5px;
+	border: 1px solid $gray;
+	color: $darkgray;
+}
+
+[type="reset"] {
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+	text-align: left;
+	text-transform: uppercase;
+	text-decoration: underline;
+	color: #000;
+	font-family: $lato;
+	font-weight: 700;
+	width: auto;
+	padding: 0;
+	 &:hover {
+	 	color: $hover;
+	 }
+	 &:focus {
+	 	outline: none;
+	 }
+}

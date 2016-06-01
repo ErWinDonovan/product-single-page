@@ -1,0 +1,102 @@
+.main-menu {
+	border-top: 1px solid $lightgray;
+	border-bottom: 1px solid $lightgray;
+	min-height: 70px;
+	.container {
+		position: relative;
+	}
+}
+
+.nav {
+	text-align: center;
+	line-height: 70px;
+	li {
+		display: inline-block;
+		position: relative;
+		&:hover .dropdown {
+			visibility: visible;  
+			opacity: 1;
+			top: 101%;
+		}
+		a {
+			font-family: 'Lato', Arial, sans-serif;
+			font-weight: 400;
+			font-size: 12px;
+			display: block;
+			text-transform: uppercase;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+}
+
+.dropdown {
+  position: absolute;
+  z-index: 999;
+  background-color: #fff;
+  top: 120%;
+  width: 100px;
+  text-align: left;
+  line-height: 3;
+  visibility: hidden;
+  opacity: 0;
+  transition: .2s;
+}
+
+.menu-icon {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -8px;	
+	a {
+		display: block;
+		width: 16px;
+		height: 16px;
+		&:before {
+			content: $font-Flaticon-bars;
+			font-family: "Flaticon";
+			right: 0;
+			font-size: 16px;
+		}
+	}
+}
+
+.right-icons {
+	position: absolute;
+	display: inline-block;
+	right: 0;
+	top: 50%;
+	margin-top: -14px;
+
+}
+
+.like {
+	display: inline-block;
+	a {
+		display: block;
+		width: 16px;
+		height: 16px;
+		padding: 8px 12px;
+		&:before {
+			content: $font-Flaticon-heart;
+			font-family: "Flaticon";
+			font-size: 16px;
+		}
+	}
+}
+
+.search {
+	display: inline-block;
+	border-left: 1px dotted $gray;
+	a {
+		display: block;
+		width: 16px;
+		height: 16px;
+		padding: 8px 12px;
+		&:before {
+			content: $font-Flaticon-musica-searcher;
+			font-family: "Flaticon";
+			font-size: 16px;
+		}
+	}
+}

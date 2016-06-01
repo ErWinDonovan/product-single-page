@@ -1,0 +1,33 @@
+.add-cart, .add-wlist {
+	text-align: center;
+	text-transform: uppercase;
+	font-style: $lato;
+	font-weight: 700;
+	font-size: 14px;
+	margin-bottom: 15px;
+		a {
+			display: block;
+			width: 100%;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+}
+
+.add-cart {
+	a {
+		background-color: #000;
+		color: #fff;
+	}
+}
+
+.add-wlist {
+	a {
+		border: 1px solid $gray;
+		color: #000;
+		&:before {
+			font-family: Flaticon;
+			content: $font-Flaticon-heart;
+			margin-right: 5px;
+		}
+	}
+}

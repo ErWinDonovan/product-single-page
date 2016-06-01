@@ -1,0 +1,10 @@
+.footer {
+	text-align: center;
+	border-top: 1px solid $lightgray;
+	color: $gray;
+	p{
+		line-height: 70px;
+		min-height: 70px;
+		margin: 0;
+	}
+}
